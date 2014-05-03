@@ -3,22 +3,28 @@ var form = new ContactForm({
 	fields: [
 	{
 		name: 'name',
-		regex: /.+/,
+		validate: /.+/,
 		message: 'Please provide a name',
 	},
 	{
 		name: 'email',
-		regex: /.+/,
+		validate: /.+/,
 		message: 'Please provide an email',
 	},
 	{
 		name: 'number',
-		regex: /\d+/,
+		validate: /\d+/,
 		message: 'Please provide a number',
 	},
 	{
 		name: 'color',
-		regex: /.+/, // TODO: make this use a function
+		validate: function(text) {
+			text = text.trim().toLowerCase();
+			var colors = ['red', 'blue', 'green', 'orange', 'yellow', 'purple', 
+				'brown', 'grey', 'gray', 'pink'];
+
+			return colors.indexOf(text) >= 0;
+		},
 		message: 'Please provide a color',
 	}
 	],
