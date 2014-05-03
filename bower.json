@@ -1,0 +1,21 @@
+{
+	"name": "contact-form",
+	"version": "0.0.1",
+	"homepage": "https://github.com/chipbell4/contact-form",
+	"authors": [
+		"Chip Bell"
+	],
+	"description": "Helper file for generating nice contact forms",
+	"license": "MIT",
+	"ignore": [
+		"lib/*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies" : {
+		"jquery" : ">=1.10.*"
+	}
+
+}
