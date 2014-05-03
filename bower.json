@@ -5,7 +5,7 @@
 	"authors": [
 		"Chip Bell"
 	],
-	"description": "Helper Script for generating nice contact forms",
+	"description": "Helper file for generating nice contact forms",
 	"license": "MIT",
 	"ignore": [
 		"lib/*",
